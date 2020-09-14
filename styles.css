@@ -9,6 +9,7 @@ body {
 
 button {
 	outline: none;
+	cursor: pointer;
 }
 
 .wrapper {
@@ -52,7 +53,7 @@ Facebook Button
   border-radius: 2px;
 }
 
-/* Facebook Main Button styles */
+/*== Facebook Main Button styles ==*/
 .facebook-button button.main {
   background-color: #1771E6;
   color: #fff;
@@ -69,16 +70,16 @@ Facebook Button
   background-color: #1d4698;
 }
 
-/* Facebook Dark Button styles */
+/*== Facebook Dark Button styles ==*/
 .facebook-button button.dark {
-  background-color: transparent;
-  color: #3a3b3c;
+  background-color: #3a3b3c;
+  color: #a8b3b8;
   border: 1px solid #3a3b3c;
 }
 
 .facebook-button button.dark:hover {
-  background-color: #3a3b3c;
-  color: #a8b3b8;
+  background-color: transparent;
+  color: #3a3b3c;
 }
 
 .facebook-button button.dark:active {
@@ -86,7 +87,7 @@ Facebook Button
   border-color: #d8dade;
 }
 
-/* Facebook Light Button styles */
+/*== Facebook Light Button styles ==*/
 .facebook-button button.light {
   background-color: #f6f7f9;
   color: #4b4756;
@@ -107,7 +108,7 @@ Facebook Button
 Twitter Button
 ================*/
 
-/* General Twitter Button styles */
+/*== General Twitter Button styles ==*/
 .twitter-button button {
   padding: 8px 45px;
   font-size: 14px;
@@ -115,7 +116,7 @@ Twitter Button
   border-radius: 30px;
 }
 
-/* Twitter Main Button styles */
+/*== Twitter Main Button styles ==*/
 .twitter-button button.main {
   background-color: #28a1f2;
   color: #fff;
@@ -152,6 +153,8 @@ Twitter Button
 /*==============
 3D Buttons
 ================ */
+
+/*== 3D Rectangle button ==*/
 
 .three-d-rectangle {
 	position: relative;
@@ -215,3 +218,77 @@ Twitter Button
 	bottom: -5px;
 }
 
+/*== 3D Circle Button ==*/
+.three-d-circle {
+	position: relative;
+	background: #80a05e;
+	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 40%));
+	font-size: 24px;
+	text-shadow: 0 -1px 0 #80b40e;
+	color: #fff;
+	border: 1px solid hsl(20, 100%, 20%);
+	border-radius: 100%;
+	height: 120px;
+	width: 120px;
+	z-index: 4;
+	outline: none;
+	box-shadow: inset 0 1px 0 hsl(20, 100%, 50%),
+							0 2px 0 hsl(20, 100%, 20%),
+							0 3px 0 hsl(20, 100%, 18%),
+							0 4px 0 hsl(20, 100%, 16%),
+							0 5px 0 hsl(20, 100%, 14%),
+							0 6px 0 hsl(20, 100%, 12%),
+							0 7px 0 hsl(20, 100%, 10%),
+							0 8px 0 hsl(20, 100%, 8%),
+							0 9px 0 hsl(20, 100%, 6%),
+							0 10px 0 hsl(20, 100%, 4%);
+}
+
+.three-d-circle:hover {
+	background: radial-gradient(hsl(20, 100%, 40%), hsl(20, 100%, 30%));
+}
+
+.three-d-circle:active {
+	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 50%));
+	top: 4px;
+	box-shadow: inset 0 1px 0 hsl(20, 100%, 50%),
+							0 2px 0 hsl(20, 100%, 20%),
+							0 3px 0 hsl(20, 100%, 18%),
+							0 4px 0 hsl(20, 100%, 16%),
+							0 5px 0 hsl(20, 100%, 14%),
+							0 6px 0 hsl(20, 100%, 12%);
+
+}
+
+/*== 3D Square Button ==*/
+.three-d-sqaure {
+	position: relative;
+	background: #80a05e;
+	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 40%));
+	font-size: 24px;
+	text-shadow: 0 -1px 0 #80b40e;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px 20px;
+	height: 150px;
+	width: 150px;
+	box-shadow: 20px 20px 0 hsl(240, 100%, 30%);
+	border: none;
+	outline: none;
+}
+
+.three-d-sqaure:hover {
+	background: radial-gradient(hsl(20, 100%, 40%), hsl(20, 100%, 30%));
+}
+
+.three-d-sqaure:active {
+	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 50%));
+	top: 4px;
+	box-shadow: inset 0 1px 0 hsl(20, 100%, 50%),
+							0 2px 0 hsl(20, 100%, 20%),
+							0 3px 0 hsl(20, 100%, 18%),
+							0 4px 0 hsl(20, 100%, 16%),
+							0 5px 0 hsl(20, 100%, 14%),
+							0 6px 0 hsl(20, 100%, 12%);
+
+}
