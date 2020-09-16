@@ -261,10 +261,10 @@ Twitter Button
 }
 
 /*== 3D Square Button ==*/
-.three-d-sqaure {
+.three-d-square {
 	position: relative;
 	background: #80a05e;
-	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 40%));
+	background: radial-gradient(hsl(90, 100%, 50%), hsl(90, 100%, 40%));
 	font-size: 24px;
 	text-shadow: 0 -1px 0 #80b40e;
 	color: #fff;
@@ -272,23 +272,58 @@ Twitter Button
 	padding: 10px 20px;
 	height: 150px;
 	width: 150px;
-	box-shadow: 20px 20px 0 hsl(240, 100%, 30%);
+	box-shadow: 20px 20px 0 hsl(90, 100%, 30%);
 	border: none;
 	outline: none;
 }
 
-.three-d-sqaure:hover {
-	background: radial-gradient(hsl(20, 100%, 40%), hsl(20, 100%, 30%));
+.three-d-square:hover {
+	background: hsl(90, 100%, 40%);
 }
 
-.three-d-sqaure:active {
-	background: radial-gradient(hsl(20, 100%, 50%), hsl(20, 100%, 50%));
-	top: 4px;
-	box-shadow: inset 0 1px 0 hsl(20, 100%, 50%),
-							0 2px 0 hsl(20, 100%, 20%),
-							0 3px 0 hsl(20, 100%, 18%),
-							0 4px 0 hsl(20, 100%, 16%),
-							0 5px 0 hsl(20, 100%, 14%),
-							0 6px 0 hsl(20, 100%, 12%);
+.three-d-square:active {
+	background: hsl(90, 100%, 30%);
+	top: 10px;
+	left: 10px;
+	box-shadow: 10px 10px 0 hsl(90, 100%, 30%);
+}
 
+.three-d-square::before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 20px solid transparent;
+	border-left: 20px solid hsl(90, 100%, 30%);
+	border-right-width: 0;
+	top: 0;
+	right: -20px;
+}
+
+.three-d-square::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 20px solid transparent;
+	border-top: 20px solid hsl(90, 100%, 30%);
+	border-bottom-width: 0;
+	bottom: -20px;
+	left: 0;
+}
+
+.three-d-square:active::before {
+	border: 10px solid transparent;
+	border-left: 10px solid hsl(90, 100%, 30%);
+	border-right-width: 0;
+	right: -10px;
+}
+
+.three-d-square:active::after {
+	border: 10px solid transparent;
+	border-top: 10px solid hsl(90, 100%, 30%);
+	border-bottom-width: 0;
+	bottom: -10px;
 }
