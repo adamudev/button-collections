@@ -448,3 +448,63 @@ Bootstrap Button
 	color: #fff;
 	border-color: #1d2124;
 }
+
+/*===================
+Material UI Button
+=====================*/
+
+.muibutton {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.75;
+	text-transform: uppercase;
+	padding: 6px 16px;
+	min-width: 64px;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+	box-sizing: border-box;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+/*== Material UI Default ==*/
+.muibutton.default {
+	background-color: #e0e0e0;
+	color: rgba(0, 0, 0, 0,87);
+}
+
+.muibutton.default:hover {
+	background-color: #d5d5d5;
+	box-shadow:  0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+/*== Material UI Primary ==*/
+.muibutton.primary {
+	background-color: #1976d2;
+	color: #fff;
+}
+
+.muibutton.primary:hover {
+	background-color: rgb(17, 82, 147);
+	box-shadow:  0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+/*== Material UI Secondary ==*/
+.muibutton.secondary {
+	background-color: rgb(220, 0, 78);
+	color: #fff;
+}
+
+.muibutton.secondary:hover {
+	background-color: rgb(154, 0, 54);
+	box-shadow:  0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+/*== Material UI Disabled ==*/
+.muibutton.disabled {
+	background-color: rgba(0, 0, 0, 0.12);
+	color: rgba(0, 0, 0, 0.26);
+	cursor: default;
+	pointer-events: none;
+}
